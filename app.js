@@ -18,8 +18,8 @@ async function getCarInfo() {
     try{
         const battery = await polestar.getBattery()
         const odometer = await polestar.getOdometer()
-        mqttClient.publish(baseTopic+'/'+vin+'/battery', JSON.stringify(battery))
-        mqttClient.publish(baseTopic+'/'+vin+'/odometer', JSON.stringify(odometer))
+        mqttClient.publish(baseTopic+vin+'/battery', JSON.stringify(battery))
+        mqttClient.publish(baseTopic+vin+'/odometer', JSON.stringify(odometer))
     } catch(e){
         console.log(e)
     }
