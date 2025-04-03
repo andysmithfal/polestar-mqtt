@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@andysmithfal/polestar.js": "^1.6.0",
+    "@andysmithfal/polestar.js": "^1.7.0",
     "dotenv": "^16.3.1",
     "mqtt": "^5.3.3"
   }
